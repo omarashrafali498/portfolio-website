@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Ubuntu", sans-serif;
+    }
+    
+    .ubuntu-regular {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
+    section {
+      padding: 70px 20%;
+    }
+    a {
+      text-decoration: none;
+      color: #607d9a ;
+    }
+    /* navbar section */
+    nav {
+      padding: 20px 10%;
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    nav ul li a {
+      font-weight: bold;
+      transition: color 0.3s ease;
+      color: white;
+    }
+    nav ul li a:hover {
+      color: #607d9a;
+    }
+    .nav-link-btn {
+      margin-right: 1.5rem;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .fas.fa-arrow-right {
+      margin-left: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .nav-link.btn:hover {
+      color: #ffffff;
+      background-color: #facc15;
+    }
+   /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      background: url(./images/background.jpg);
+    }
+/* Left text */
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h5 {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .hero-text h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #607d9a;
+      margin-bottom: 30px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+    }
+    .contact-info i {
+      color: #607d9a;
+    }
+/* Right image */
+    .hero-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    /* About */
+    .about {
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+    /* Skills */
+    .skills .progress-container {
+      margin-bottom: 20px;
+    }
+    .progress-container {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+    }
+    .progress-bar {
+      height: 100%;
+      text-align: center;
+      color: white;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+      font-weight: bold;
+    }
+    .projects-description {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    /* Project Grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+
+    }
+
+    /* Project Card */
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Project Image */
+    .project-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .project-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .project-card:hover .project-image img {
+      transform: scale(1.1);
+    }
+    /* Overlay Effect */
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+    .btn {
+      background: black;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #facc15;
+    }
+    /* Project Content */
+    .project-content {
+      padding: 20px;
+    }
+    .project-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .project-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    /* Contact */
+    .contact {
+      text-align: center;
+      color: white;
+      padding: 20px 0;
+    }
+    .contact p {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    #email {
+      display: block;         
+      margin-bottom: 25px;     /* spacing between email and icons */
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    #email:hover {
+      color: #facc15;
+    }
+    .socials a {
+      margin: 0 10px;
+      font-size: 20px;       /* icon size */
+      color: white;
+      background: #333;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background: #facc15;   /* yellow hover */
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: white;
+      font-size: 14px;
+    }
