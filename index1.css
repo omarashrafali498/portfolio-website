@@ -39,6 +39,25 @@
       right: 0;
       z-index: 20;
     }
+.nav-links a {
+    position: relative;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+    .logo span span {
+      color: #facc15;
+    }
     nav ul {
       list-style: none;
       display: flex;
@@ -53,7 +72,8 @@
       color: white;
     }
     nav ul li a:hover {
-      color: #607d9a;
+      color: #facc15;
+      transition: width 0.3s ease;
     }
     .nav-link-btn {
       margin-right: 1.5rem;
@@ -97,7 +117,7 @@
     .hero-text h2 {
       font-size: 24px;
       font-weight: 500;
-      color: #607d9a;
+      color: white;
       margin-bottom: 30px;
     }
     .contact-info p {
@@ -129,6 +149,11 @@
       background: #f9f9f9;
       line-height: 1.6;
     }
+    .about h2 {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+    }
     /* Skills */
     .skills .progress-container {
       margin-bottom: 20px;
@@ -144,6 +169,11 @@
       text-align: center;
       color: white;
       background: linear-gradient(90deg, #4facfe, #00f2fe);
+    }
+    .skills h2 {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
     }
 
     /* Section Title */
