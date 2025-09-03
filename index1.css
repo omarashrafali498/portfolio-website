@@ -251,7 +251,7 @@
     }
     #email {
       display: block;         
-      margin-bottom: 25px;     /* spacing between email and icons */
+      margin-bottom: 25px;     
       color: white;
       text-decoration: none;
       font-size: 16px;
@@ -269,7 +269,7 @@
       transition: 0.3s;
     }
     .socials a:hover {
-      background: #facc15;   /* yellow hover */
+      background: #facc15;   
       color: #000;
     }
     footer {
